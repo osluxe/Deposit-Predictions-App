@@ -11,7 +11,7 @@ with open('model-random-forest.pkl', 'rb') as file:
 
 # Inisialisasi session state untuk menyimpan riwayat prediksi
 if 'history' not in st.session_state:
-    st.session_state.history = []
+    st.session_state['history'] = []
 
 # Judul aplikasi
 st.title("🎯 Prediksi Nasabah Berlangganan Deposito")
